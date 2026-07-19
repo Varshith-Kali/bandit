@@ -46,7 +46,6 @@ Two patterns are flagged (both narrow, AST-level — no interprocedural dataflow
 .. versionadded:: 1.9.0
 
 """  # noqa: E501
-
 import ast
 
 import bandit
