@@ -771,6 +771,14 @@ class FunctionalTests(testtools.TestCase):
         }
         self.check_example("flask_debug.py", expect)
 
+    def test_flask_send_file_with_request_path(self):
+        expect = {
+            "SEVERITY": {"UNDEFINED": 0, "LOW": 0, "MEDIUM": 4, "HIGH": 0},
+            "CONFIDENCE": {"UNDEFINED": 0, "LOW": 0, "MEDIUM": 4, "HIGH": 0},
+        }
+        self.check_example("flask_send_file.py", expect)
+
+
     def test_nosec(self):
         expect = {
             "SEVERITY": {"UNDEFINED": 0, "LOW": 5, "MEDIUM": 0, "HIGH": 0},
