@@ -16,6 +16,8 @@ requests.options('https://gmail.com', timeout=30, verify=True)
 requests.options('https://gmail.com', timeout=30, verify=False)
 requests.head('https://gmail.com', timeout=30, verify=True)
 requests.head('https://gmail.com', timeout=30, verify=False)
+requests.request('GET', 'https://gmail.com', timeout=30, verify=True)
+requests.request('GET', 'https://gmail.com', timeout=30, verify=False)
 
 # Okay
 httpx.request('GET', 'https://gmail.com', timeout=30, verify=True)
