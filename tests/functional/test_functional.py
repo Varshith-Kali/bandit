@@ -774,11 +774,11 @@ class FunctionalTests(testtools.TestCase):
     def test_flask_send_file(self):
         """Test for Flask send_file() path traversal (B2XX placeholder)."""
         expect = {
-            "SEVERITY": {"UNDEFINED": 0, "LOW": 0, "MEDIUM": 4, "HIGH": 0},
+            "SEVERITY": {"UNDEFINED": 0, "LOW": 0, "MEDIUM": 13, "HIGH": 0},
             "CONFIDENCE": {
                 "UNDEFINED": 0,
                 "LOW": 0,
-                "MEDIUM": 4,
+                "MEDIUM": 13,
                 "HIGH": 0,
             },
         }
